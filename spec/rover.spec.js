@@ -15,4 +15,13 @@ describe("Rover class", function() {
     expect(rover.position).toBe(position);
   });
 
+  // TEST 8
+  test("response returned by receiveMessage contains the name of the message", function() {
+    let message = new Message ('Test message with two commands');
+    let rover = new Rover(98382);
+    let response = rover.receiveMessage(message);
+    expect(response).toBe(message)
+  });
+
+  // TEST 9
 });

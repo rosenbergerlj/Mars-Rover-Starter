@@ -1,4 +1,4 @@
-class Command {
+ class Command {
    constructor(commandType, value) {
      this.commandType = commandType;
      if (!commandType) {
